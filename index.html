@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('https://i2.wp.com/www.cleantechloops.com/wp-content/uploads/2019/10/top-travel-agencies-to-work-for.jpg?fit=1920%2C1080&ssl=1');
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: auto;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: indianred;
+        }
+
+        .register a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+        }
+
+        .register a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+        .h-text {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .h-text span {
+            letter-spacing: 5px;
+        }
+
+        .h-text h1 {
+            font-size: 3.5em;
+        }
+
+        .h-text a {
+            text-decoration: none;
+            background: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+        }
+
+        .h-text a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        .services {
+            background:rgb(234, 237, 237);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .service-card {
+            background:whitesmoke;
+            border: 1px solid #100f0f;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: black;
+        }
+
+        .service-card h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-shadow: black;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 1em;
+            margin-bottom: 15px;
+            
+        }
+
+        .service-card img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .cta {
+            padding: 30px;
+            text-align: center;
+            text-underline-position:rgb(2, 2, 2);
+            background-color: #ebefeb;
+            color: rgb(182, 129, 129);
+        }
+        .testimonials {
+            text-decoration: none;
+            background: indianred;
+            color: rgb(7, 6, 6);
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+            background-color: #949798;
+        }
+        
+        .testimonial-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .customer {
+            font-weight: bold;
+        }
+        footer{
+            background-color: #f1ecec;
+            padding: 20px;
+            text-align: center;
+            color: rgb(1, 1, 1);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                WanderWeave
+            </div>
+            <div class="menu">
+                <a href="#services">Services</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="register">
+                <a href="#">Register Now</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <span>Lets</span>
+            <h1>Explore Your Future Destination</h1>
+            <br>
+            <a href="#">Tap to Book</a>
+        </section>
+    </header>
+    <section class="services" id="services">
+        <h2>Our services</h2>
+        <div class="service-card">
+            <img src="https://www.hlimg.com/images/stories/738X538/goa-tour-packages55f06b1c12e4ed0dce5d_1466659887m.jpg" alt="Customized Travel Packages">
+            <h3>Customized Travel Packages</h3>
+            <p>Explore-World offers personalized travel packages tailored to your preferences and budget. Your dream vacation is just a click away.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/May/tour-guide.jpg" alt="Expert Travel Guides">
+            <h3>Expert Travel Guides</h3>
+            <p>Our experienced travel guides ensure you have a seamless and enriching travel experience. Discover hidden gems with our local experts.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="https://blog.sew-eurodrive.it/hubfs/24-7%20customer%20service.jpg" alt="24/7 Customer Support">
+            <h3>24/7 Customer Support</h3>
+            <p>Have peace of mind with our round-the-clock customer support. We are here to assist you at every step of your journey.</p>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-item">
+            <p>"The best travel agency! They made our trip unforgettable. Highly recommended!"</p>
+            <p class="customer">- John Doe</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"Amazing service and attention to detail. Our family had a fantastic vacation!"</p>
+            <p class="customer">- Jane Smith</p>
+        </div>
+    </section>
+    <section id="contact" class="cta">
+        <h2>Ready to Plan Your Adventure?</h2>
+        <p>Contact us today and start your journey to new and exciting destinations.</p>
+        <a href="#contact" class="btn primary">Contact Us</a>
+    </section>
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2023 WanderWeave. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
